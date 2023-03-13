@@ -1,1 +1,1 @@
-# EPAM-JavaTestAuto-HW1-
+JavaTestAuto course for EPAM.
