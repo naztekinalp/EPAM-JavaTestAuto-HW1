@@ -1,7 +1,10 @@
 package HW2;
 
 public class Palindrome {
-    public boolean isPalindrome(int x) {
+    public static void main(String[] args) {
+        isPalindrome(4);
+    }
+    public static boolean isPalindrome(int x) {
         if (x == 0) {
             return true;
         }
