@@ -1,1 +1,1 @@
-JavaTestAuto course for EPAM.
+Repository for JavaTestAuto course on EPAM.
