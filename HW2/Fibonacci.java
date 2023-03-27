@@ -1,9 +1,11 @@
 package HW2;
+
 public class Fibonacci {
     public static void main(String args[]) {
         int n = 100;
         fibo(n);
     }
+
     static void fibo(int n) {
         int number1 = 0;
         int number2 = 1;
@@ -17,5 +19,4 @@ public class Fibonacci {
             count = count++;
         }
     }
-
 }
