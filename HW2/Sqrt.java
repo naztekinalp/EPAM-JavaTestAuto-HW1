@@ -2,16 +2,18 @@ package HW2;
 
 public class Sqrt {
     public static void main(String[] args) {
-        mySqrt(4);
+        System.out.println(SquareRoot(81));
     }
 
-    public static int mySqrt(int x) {
-        int result = 0;
-        if (x == 0) {
-            return 0;
-        } else {
-            result = (int) Math.sqrt(x);
+    public static int SquareRoot(int a) {
+        if (a < 2) {
+            return a;
         }
-        return result;
+
+        int b = 1;
+        while (b * b <= a) {
+            b++;
+        }
+        return b - 1;
     }
 }
