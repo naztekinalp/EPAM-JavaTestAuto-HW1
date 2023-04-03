@@ -2,7 +2,7 @@ package HW3;
 
 import java.util.ArrayList;
 
-public class Main{
+public class Main {
     public static void main(String[] args) {
         Book[] books = {
                 new Book(1234, "Bas", new Author(8132, "James", "Hetfield"), new Publisher(9111, "Kemal", "Izmir"), 1920, true),
@@ -19,9 +19,9 @@ public class Main{
     public static ArrayList<Book> filterByISBN(Book[] books, int value) {
         ArrayList<Book> booksToReturn = new ArrayList<Book>();
 
-        for (int i = 0; i < books.length; i++) {
-            if (books[i].isbn == value) {
-                booksToReturn.add(0, books[i]);
+        for (Book book : books) {
+            if (book.isbn == value) {
+                booksToReturn.add(0, book);
             }
         }
         return booksToReturn;
