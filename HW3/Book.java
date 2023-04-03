@@ -50,7 +50,7 @@ public class Book {
         this.publisher = publisher;
     }
 
-    public void setISBN(int ISBN) {
+    public void setISBN(int isbn) {
         this.isbn = isbn;
     }
 
