@@ -17,10 +17,10 @@ public class Main{
     }
 
     public static ArrayList<Book> filterByISBN(Book[] books, int value) {
-        ArrayList<Book> booksToReturn = new ArrayList<HW3>();
+        ArrayList<Book> booksToReturn = new ArrayList<Book>();
 
         for (int i = 0; i < books.length; i++) {
-            if (books[i].ISBN == value) {
+            if (books[i].isbn == value) {
                 booksToReturn.add(0, books[i]);
             }
         }

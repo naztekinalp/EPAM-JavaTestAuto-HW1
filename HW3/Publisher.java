@@ -1,49 +1,50 @@
 package HW3;
 
 public class Publisher {
-    int ID;
-    String Name;
-    String Address;
+    int id;
+    String name;
+    String address;
 
     Publisher() {
     }
 
-    Publisher(int ID, String Name) {
-        this.ID = ID;
-        this.Name = Name;
+    Publisher(int id, String name) {
+        this.id = id;
+        this.name = name;
     }
 
-    Publisher(int ID, String Name, String Address) {
-        this.ID = ID;
-        this.Name = Name;
-        this.Address = Address;
+    Publisher(int id, String name, String address) {
+        this.id = id;
+        this.name = name;
+        this.address = address;
     }
 
-    public void setID(int ID) {
-        this.ID = ID;
+    public void setID(int id) {
+        this.id = id;
+        ;
     }
 
     public void setName(String name) {
-        Name = name;
+        name = name;
     }
 
     public void setAddress(String address) {
-        Address = address;
+        address = address;
     }
 
     public int getID() {
-        return ID;
+        return id;
     }
 
     public String getName() {
-        return Name;
+        return name;
     }
 
     public String getAddress() {
-        return Address;
+        return address;
     }
 
     public String toString() {
-        return "Publisher{ID='" + ID + "', Name=" + Name + ", Address=" + Address + "}";
+        return "Publisher{id='" + id + "', name=" + name + ", address=" + address + "}";
     }
 }

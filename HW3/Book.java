@@ -1,100 +1,100 @@
 package HW3;
 
 public class Book {
-    public int ISBN;
+    public int isbn;
     String name;
-    Author Author;
-    Publisher Publisher;
-    int PublicationDate;
-    boolean Paperback;
+    Author author;
+    Publisher publisher;
+    int publicationDate;
+    boolean paperback;
 
     public String toString() {
-        return "Book{ISBN='" + ISBN + "', Name=" + Name + ", Author=" + Author + ", Publisher=" + Publisher + ", PublicationDate=" + PublicationDate + ", Paperback=" + Paperback + '}';
+        return "Book{isbn='" + isbn + "', name=" + name + ", author=" + author + ", publisher=" + publisher + ", PublicationDate=" + publicationDate + ", paperback=" + paperback + '}';
     }
 
     Book() {
     }
 
-    Book(int ISBN, String Name) {
-        this.ISBN = ISBN;
+    Book(int isbn, String name) {
+        this.isbn = isbn;
         this.name = name;
     }
 
-    Book(int ISBN, String Name, Author Author) {
-        this.ISBN = ISBN;
-        this.Name = Name;
-        this.Author = Author;
+    Book(int isbn, String name, Author author) {
+        this.isbn = isbn;
+        this.name = name;
+        this.author = author;
     }
 
-    public Book(int ISBN, String Name, Author Author, Publisher Publisher, int PublicationDate) {
-        this.ISBN = ISBN;
-        this.Name = Name;
-        this.Author = Author;
-        this.Publisher = Publisher;
-        this.PublicationDate = PublicationDate;
+    public Book(int isbn, String name, Author author, Publisher publisher, int publicationDate) {
+        this.isbn = isbn;
+        this.name = name;
+        this.author = author;
+        this.publisher = publisher;
+        this.publicationDate = publicationDate;
     }
 
-    Book(int ISBN, String Name, Author Author, Publisher Publisher, int PublicationDate, boolean Paperback) {
-        this.ISBN = ISBN;
-        this.Name = Name;
-        this.Author = Author;
-        this.Publisher = Publisher;
-        this.PublicationDate = PublicationDate;
-        this.Paperback = Paperback;
+    Book(int isbn, String name, Author author, Publisher publisher, int publicationDate, boolean paperback) {
+        this.isbn = isbn;
+        this.name = name;
+        this.author = author;
+        this.publisher = publisher;
+        this.publicationDate = publicationDate;
+        this.paperback = paperback;
     }
 
-    Book(int ISBN, String Name, Author Author, Publisher Publisher) {
-        this.ISBN = ISBN;
-        this.Name = Name;
-        this.Author = Author;
-        this.Publisher = Publisher;
+    Book(int isbn, String name, Author author, Publisher publisher) {
+        this.isbn = isbn;
+        this.name = name;
+        this.author = author;
+        this.publisher = publisher;
     }
 
     public void setISBN(int ISBN) {
-        this.ISBN = ISBN;
+        this.isbn = isbn;
     }
 
     public void setName(String name) {
-        this.Name = name;
+        this.name = name;
     }
 
     public void setAuthor(HW3.Author author) {
-        this.Author = author;
+        this.author = author;
     }
 
     public void setPublisher(Publisher publisher) {
-        this.Publisher = publisher;
+        this.publisher = publisher;
     }
 
     public void setPublicationDate(int publicationDate) {
-        this.PublicationDate = publicationDate;
+        this.publicationDate = publicationDate;
     }
 
     public void setPaperback(boolean paperback) {
-        this.Paperback = paperback;
+        this.paperback = paperback;
     }
 
     public int getISBN() {
-        return ISBN;
+        return isbn;
     }
 
     public String getName() {
-        return Name;
+        return name;
     }
 
     public Author getAuthor() {
-        return Author;
+        return author;
     }
 
     public Publisher getPublisher() {
-        return Publisher;
+        return publisher;
     }
 
     public int getPublicationDate() {
-        return PublicationDate;
+        return publicationDate;
     }
 
     public boolean getPaperback() {
-        return Paperback;
+        return paperback;
     }
 }

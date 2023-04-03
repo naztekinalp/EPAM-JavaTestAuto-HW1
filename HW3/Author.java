@@ -1,50 +1,50 @@
 package HW3;
 
 public class Author {
-    int ID;
-    String FirstName;
-    String LastName;
+    int id;
+    String firstName;
+    String lastName;
 
     Author() {
     }
 
-    Author(int ID, String FirstName) {
-        this.ID = ID;
-        this.FirstName = FirstName;
+    Author(int id, String firstName) {
+        this.id = id;
+        this.firstName = firstName;
     }
 
-    Author(int ID, String FirstName, String LastName) {
-        this.ID = ID;
-        this.FirstName = FirstName;
-        this.LastName = LastName;
+    Author(int id, String firstName, String lastName) {
+        this.id = id;
+        this.firstName = firstName;
+        this.lastName = lastName;
     }
 
     public int getID() {
-        return ID;
+        return id;
     }
 
-    public void setID(int ID) {
-        this.ID = ID;
+    public void setID(int id) {
+        this.id = id;
     }
 
     public void setFirstName(String firstName) {
-        FirstName = firstName;
+        firstName = firstName;
     }
 
     public void setLastName(String lastName) {
-        LastName = lastName;
+        lastName = lastName;
     }
 
 
     public String getFirstName() {
-        return FirstName;
+        return firstName;
     }
 
     public String getLastName() {
-        return LastName;
+        return lastName;
     }
 
     public String toString() {
-        return "Author{ID='" + ID + "', FirstName=" + FirstName + ", LastName=" + LastName + "}";
+        return "Author{id='" + id + "', firstName=" + firstName + ", lastName=" + lastName + "}";
     }
 }
