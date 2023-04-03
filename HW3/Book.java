@@ -1,8 +1,8 @@
 package HW3;
 
 public class Book {
-    int ISBN;
-    String Name;
+    public int ISBN;
+    String name;
     Author Author;
     Publisher Publisher;
     int PublicationDate;
@@ -17,7 +17,7 @@ public class Book {
 
     Book(int ISBN, String Name) {
         this.ISBN = ISBN;
-        this.Name = Name;
+        this.name = name;
     }
 
     Book(int ISBN, String Name, Author Author) {
@@ -26,7 +26,7 @@ public class Book {
         this.Author = Author;
     }
 
-    Book(int ISBN, String Name, Author Author, Publisher Publisher, int PublicationDate) {
+    public Book(int ISBN, String Name, Author Author, Publisher Publisher, int PublicationDate) {
         this.ISBN = ISBN;
         this.Name = Name;
         this.Author = Author;

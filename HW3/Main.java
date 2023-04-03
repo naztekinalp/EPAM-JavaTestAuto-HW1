@@ -1,8 +1,9 @@
 package HW3;
 
-public class Main {
-    public static void main(String[] args) {
+import java.util.ArrayList;
 
+public class Main{
+    public static void main(String[] args) {
         Book[] books = {
                 new Book(1234, "Bas", new Author(8132, "James", "Hetfield"), new Publisher(9111, "Kemal", "Izmir"), 1920, true),
                 new Book(5364563, "Dijsktra", new Author(6456462, "Naz", "Tekinalp"), new Publisher(7474, "Recaizade", "Ankara"), 2023, true),
@@ -11,12 +12,18 @@ public class Main {
                 new Book(98642, "Usdagul", new Author(99666, "Taylor", "Swift"), new Publisher(3167, "Abdulhamit", "Van"), 1999, false),
 
         };
+        filterByISBN(books, 1234);
+        System.out.println(filterByISBN(books, 1234));
+    }
+
+    public static ArrayList<Book> filterByISBN(Book[] books, int value) {
+        ArrayList<Book> booksToReturn = new ArrayList<HW3>();
 
         for (int i = 0; i < books.length; i++) {
-            if (books[i].Paperback == false) {
-                System.out.println(books[i].ISBN);
+            if (books[i].ISBN == value) {
+                booksToReturn.add(0, books[i]);
             }
-
         }
+        return booksToReturn;
     }
 }
