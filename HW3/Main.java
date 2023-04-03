@@ -12,7 +12,6 @@ public class Main {
                 new Book(98642, "Usdagul", new Author(99666, "Taylor", "Swift"), new Publisher(3167, "Abdulhamit", "Van"), 1999, false),
 
         };
-        filterByISBN(books, 1234);
         System.out.println(filterByISBN(books, 1234));
     }
 
