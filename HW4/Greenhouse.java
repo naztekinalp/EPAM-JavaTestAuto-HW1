@@ -11,31 +11,23 @@ public class Greenhouse {
 
     void buyNewPlant(String plant) {
 
-        if (!plant.equals("bonsai") || !plant.equals("raspberry") || !plant.equals("rose")) {
+        if (!plant.equals("bonsai") && !plant.equals("raspberry") && !plant.equals("rose")) {
             System.out.println("Invalid plant");
-            return;
-        }
-        if (plant.equals("bonsai")) {
+        } else if (plant.equals("bonsai")) {
             plants.add(new Bonsai(plants.size()));
             this.balance = this.balance - Bonsai.price;
-            return;
-        }
-        if (plant.equals("raspberry")) {
+        } else if (plant.equals("raspberry")) {
             plants.add(new Raspberry(plants.size()));
             this.balance = this.balance - Raspberry.price;
-            return;
-        }
-        if (plant.equals("rose")) {
+        } else {
             plants.add(new Rose(plants.size()));
             this.balance = this.balance - Rose.price;
-            return;
         }
-
     }
 
     void waterPlants() {
-        for (int i = 0; i < plants.size(); i++) {
-            plants.get(i).waterPlant();
+        for (Plant plant : plants) {
+            plant.waterPlant();
         }
     }
 
@@ -44,19 +36,14 @@ public class Greenhouse {
     }
 
     void removeAPlant(int id) {
-        for (int i = 0; i < this.plants.size(); i++) {
-            if (this.plants.get(i).id == id) {
-                this.plants.remove((this.plants.get(i)));
-            }
-        }
+        plants.removeIf(plant -> plant.id == id);
     }
 
     void retrievePlantsFromJP() {
         for (Plant plant : this.plants) {
-            if (plant.nativeRegion == "JP") {
+            if (plant.nativeRegion.equals("JP")) {
                 System.out.println("Type is JP");
             }
         }
     }
-
 }
