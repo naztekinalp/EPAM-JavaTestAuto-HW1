@@ -3,9 +3,7 @@ package HW4;
 abstract public class Plant {
     String type;
     String nativeRegion;
-    static int price;
     double waterLevel = 1.0;
-
     int id;
 
     public Plant(int id, String type, String nativeRegion) {
