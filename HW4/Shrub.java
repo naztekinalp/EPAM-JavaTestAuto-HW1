@@ -10,4 +10,7 @@ public abstract class Shrub extends Plant implements Trimmable {
         System.out.println("Shrub trimmed");
     }
 
+    void harvest() {
+        System.out.println("Shrub harvested");
+    }
 }

@@ -9,6 +9,7 @@ public class Main {
 
         Raspberry raspberry = new Raspberry(2);
         raspberry.updateNationRegion("Canada");
+        raspberry.harvest();
 
         Rose rose = new Rose(3);
         rose.updateType("Red rose");
@@ -24,7 +25,5 @@ public class Main {
         greenhouse.removeAPlant(1);
 
         greenhouse.retrievePlantsFromJP();
-
-
     }
 }
