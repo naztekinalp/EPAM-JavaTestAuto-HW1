@@ -16,12 +16,17 @@ public class Greenhouse {
         } else if (plant.equals("bonsai")) {
             plants.add(new Bonsai(plants.size()));
             this.balance = this.balance - Bonsai.price;
+            System.out.println("Bought bonsai");
         } else if (plant.equals("raspberry")) {
             plants.add(new Raspberry(plants.size()));
             this.balance = this.balance - Raspberry.price;
+            System.out.println("Bought raspberry");
+
         } else {
             plants.add(new Rose(plants.size()));
             this.balance = this.balance - Rose.price;
+            System.out.println("Bought rose");
+
         }
     }
 
@@ -29,14 +34,17 @@ public class Greenhouse {
         for (Plant plant : plants) {
             plant.waterPlant();
         }
+        System.out.println("Plants watered");
     }
 
     void changeTemperature(int temperature) {
         this.temperature = temperature;
+        System.out.println("Temperature changed to " +temperature);
     }
 
     void removeAPlant(int id) {
         plants.removeIf(plant -> plant.id == id);
+        System.out.println("Plant is removed");
     }
 
     void retrievePlantsFromJP() {
