@@ -1,6 +1,7 @@
 package HW4;
 
 abstract public class Plant {
+
     String type;
     String nativeRegion;
     double waterLevel = 1.0;

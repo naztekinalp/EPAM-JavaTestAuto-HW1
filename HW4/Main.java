@@ -1,7 +1,9 @@
 package HW4;
 
 public class Main {
+
     public static void main(String[] args) {
+
         Greenhouse greenhouse = new Greenhouse();
 
         Bonsai bonsai = new Bonsai(1);
