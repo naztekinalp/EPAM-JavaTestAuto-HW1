@@ -20,10 +20,12 @@ abstract public class Plant {
 
     void updateType(String type) {
         this.type = type;
+        System.out.println("Type updated to " + type);
     }
 
     void updateNationRegion(String nativeRegion) {
         this.nativeRegion = nativeRegion;
+        System.out.println("Native region updated to " + nativeRegion);
     }
 
 }
