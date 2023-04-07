@@ -15,6 +15,7 @@ public class Main {
 
         Rose rose = new Rose(3);
         rose.updateType("Red rose");
+        rose.flower();
 
         greenhouse.buyNewPlant(bonsai);
         greenhouse.buyNewPlant(raspberry);
