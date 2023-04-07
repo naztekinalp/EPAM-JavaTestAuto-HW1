@@ -6,7 +6,6 @@ public abstract class FloweringPlant extends Plant implements Flowerable {
         super(id, type, nativeRegion);
     }
 
-    @Override
     public void flower() {
         System.out.println("Plant is flowered");
     }
