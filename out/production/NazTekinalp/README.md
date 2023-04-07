@@ -1,1 +1,0 @@
-JavaTestAuto course for EPAM.
