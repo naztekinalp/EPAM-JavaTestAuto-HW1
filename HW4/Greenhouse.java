@@ -5,7 +5,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Greenhouse {
-    int balance = 10000;
+
     int temperature = 30;
 
     List<Plant> plants = new ArrayList<Plant>();
