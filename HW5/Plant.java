@@ -30,4 +30,8 @@ abstract public class Plant {
         System.out.println("Native region updated to " + nativeRegion);
     }
 
+    void changeWaterLevel(double waterLevel) {
+        this.plantHealth.waterLevel = waterLevel;
+    }
+
 }
