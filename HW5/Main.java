@@ -19,8 +19,7 @@ public class Main {
         raspberry.harvest();
 
         Rose rose = new Rose(3);
-        rose.thorns = new Rose.Thorns();
-        rose.thorns.addThorn();
+        Rose.Thorns.addThorn();
         rose.updateType("Red rose");
         rose.flower();
 
