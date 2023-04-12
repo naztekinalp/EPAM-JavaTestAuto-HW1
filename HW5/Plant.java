@@ -1,8 +1,18 @@
 package HW5;
 
 abstract public class Plant {
+
     private class PlantHealth {
-        double waterLevel = 1.0;
+
+        private double waterLevel = 1.0;
+
+        public double getWaterLevel() {
+            return waterLevel;
+        }
+
+        public void setWaterLevel(double waterLevel) {
+            this.waterLevel = waterLevel;
+        }
     }
 
     String type;
@@ -17,7 +27,7 @@ abstract public class Plant {
     }
 
     void waterPlant() {
-        this.plantHealth.waterLevel = 1.0;
+        this.plantHealth.setWaterLevel(1.0);
     }
 
     void updateType(String type) {
@@ -31,7 +41,6 @@ abstract public class Plant {
     }
 
     void changeWaterLevel(double waterLevel) {
-        this.plantHealth.waterLevel = waterLevel;
+        this.plantHealth.setWaterLevel(waterLevel);
     }
-
 }
