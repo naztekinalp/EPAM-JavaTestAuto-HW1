@@ -48,8 +48,6 @@ public class Greenhouse {
     }
 
     public static class InvalidOptionException extends Exception {
-        public InvalidOptionException() {
-        }
 
         public InvalidOptionException(String message) {
             super(message);
