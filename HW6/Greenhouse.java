@@ -4,6 +4,7 @@ import java.io.*;
 import java.util.*;
 
 public class Greenhouse {
+
     private static List<Plant> plants = new ArrayList<>();
     private static final String FILENAME = "./HW6/plants.txt";
 
@@ -14,7 +15,7 @@ public class Greenhouse {
 
         while (true) {
             System.out.println("Please choose an option:");
-            System.out.println("1:  Add a new plant to the greenhouse");
+            System.out.println("1 - Add a new plant to the greenhouse");
             System.out.println("2 - Remove a plant from the greenhouse");
             System.out.println("3 - Find a plant in the greenhouse by any parameter");
             System.out.println("4 - Quit");

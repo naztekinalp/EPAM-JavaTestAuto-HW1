@@ -6,7 +6,7 @@ public class Plant {
     private String type;
     private int quantity;
 
-    public Plant(){
+    public Plant() {
     }
 
     public Plant(String name, String type, int quantity) {
