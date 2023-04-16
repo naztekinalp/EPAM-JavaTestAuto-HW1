@@ -1,7 +1,5 @@
 package HW6;
 
-//import java.io.Serializable;
-
 public class Plant {
 
     private String name;
@@ -25,11 +23,9 @@ public class Plant {
         return type;
     }
 
-
     public int getQuantity() {
         return quantity;
     }
-
 
     @Override
     public String toString() {
