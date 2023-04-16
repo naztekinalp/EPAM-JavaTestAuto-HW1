@@ -29,6 +29,6 @@ public class Plant {
 
     @Override
     public String toString() {
-        return "Plant [name=" + name + ", type=" + type + ", quantity=" + quantity + "]";
+        return "Plant {name=" + name + ", type=" + type + ", quantity=" + quantity + "}";
     }
 }
