@@ -132,7 +132,7 @@ public class Greenhouse {
         try (ObjectInputStream in = new ObjectInputStream(new FileInputStream(FILENAME))) {
             plants = (List<Plant>) in.readObject();
         } catch (IOException | ClassNotFoundException e) {
-            System.out.println("No plant record found. Will be updated when plant is added. " /n);
+            System.out.println("No plant record found. Will be updated when plant is added.");
         }
     }
 
