@@ -1,8 +1,6 @@
 package HW6;
 
-import java.io.Serializable;
-
-public class Plant implements Serializable {
+public class Plant implements StringSerializable {
 
     private String name;
     private String type;
@@ -32,5 +30,9 @@ public class Plant implements Serializable {
     @Override
     public String toString() {
         return "Plant {name=" + name + ", type=" + type + ", quantity=" + quantity + "}";
+    }
+
+    public String toSerializableText() {
+        return name + " " + type + " " + quantity;
     }
 }

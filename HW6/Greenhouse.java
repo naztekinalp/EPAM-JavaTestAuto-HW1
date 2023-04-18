@@ -129,18 +129,39 @@ public class Greenhouse {
     }
 
     private static void readFile() {
-        try (ObjectInputStream in = new ObjectInputStream(new FileInputStream(FILENAME))) {
-            plants = (List<Plant>) in.readObject();
-        } catch (IOException | ClassNotFoundException e) {
-            System.out.println("No plant record found. Will be updated when plant is added.");
+        try {
+            File file = new File(FILENAME);
+            Scanner scanner = new Scanner(file);
+
+            while (scanner.hasNextLine()) {
+                String line = scanner.nextLine();
+                String[] plantData = line.split(" ");
+                Plant plant = new Plant(plantData[0], plantData[1], Integer.parseInt(plantData[2]));
+                plants.add(plant);
+            }
+
+            scanner.close();
+        } catch (FileNotFoundException e) {
+            System.out.println("File not found.");
         }
     }
 
     private static void writeFile() {
-        try (ObjectOutputStream out = new ObjectOutputStream(new FileOutputStream(FILENAME))) {
-            out.writeObject(plants);
+        try {
+            StringBuilder payload = new StringBuilder();
+
+            for (Plant plant : plants) {
+                payload.append(plant.toSerializableText()).append("\n");
+            }
+
+            FileWriter fWriter = new FileWriter(FILENAME);
+
+            fWriter.write(payload.toString());
+
+            fWriter.close();
         } catch (IOException e) {
-            System.out.println("Error writing to file.");
+            System.out.print(e.getMessage());
         }
+
     }
 }
