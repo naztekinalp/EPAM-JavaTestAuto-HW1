@@ -141,7 +141,6 @@ public class Greenhouse {
             out.writeObject(plants);
         } catch (IOException e) {
             System.out.println("Error writing to file.");
-            e.printStackTrace();
         }
     }
 }
