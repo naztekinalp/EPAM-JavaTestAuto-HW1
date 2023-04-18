@@ -35,7 +35,6 @@ public class Greenhouse {
                         findPlant(scanner);
                         break;
                     case 4:
-                        writeFile();
                         System.exit(0);
                     default:
                         throw new InvalidOptionException("Invalid option is selected.");
@@ -68,6 +67,7 @@ public class Greenhouse {
         Plant plant = new Plant(name, type, quantity);
         plants.add(plant);
         System.out.println("New plant is added to the greenhouse.");
+        writeFile();
     }
 
     private static void removePlant(Scanner scanner) {
@@ -84,6 +84,7 @@ public class Greenhouse {
             }
         }
         System.out.println("No plant with name " + name + " found in the greenhouse.");
+        writeFile();
     }
 
     private static void findPlant(Scanner scanner) {
@@ -140,6 +141,7 @@ public class Greenhouse {
             out.writeObject(plants);
         } catch (IOException e) {
             System.out.println("Error writing to file.");
+            e.printStackTrace();
         }
     }
 }

@@ -1,6 +1,8 @@
 package HW6;
 
-public class Plant {
+import java.io.Serializable;
+
+public class Plant implements Serializable {
 
     private String name;
     private String type;
