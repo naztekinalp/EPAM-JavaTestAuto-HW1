@@ -79,12 +79,12 @@ public class Greenhouse {
             Plant plant = iterator.next();
             if (plant.getName().equals(name)) {
                 iterator.remove();
+                writeFile();
                 System.out.println("Plant is removed from the greenhouse.");
                 return;
             }
         }
         System.out.println("No plant with name " + name + " found in the greenhouse.");
-        writeFile();
     }
 
     private static void findPlant(Scanner scanner) {
