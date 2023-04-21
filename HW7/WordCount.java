@@ -7,7 +7,7 @@ import java.util.HashMap;
 //TASK 5
 public class WordCount {
     public static void main(String[] args) {
-        String fileName = "input.txt"; // replace with the name of your text file
+        String fileName = "input_task1.txt"; // replace with the name of your text file
         HashMap<String, Integer> wordCounts = new HashMap<>();
 
         try {
