@@ -1,7 +1,7 @@
 package HW7;
 
 import java.util.*;
-//TASK 2
+
 public class SortPoem {
 
     public static void main(String[] args) {
@@ -10,8 +10,7 @@ public class SortPoem {
 
         List<String> lines = new ArrayList<>();
 
-        // Read in the poem line by line
-        System.out.println("Enter the poem (type \"0\" on a new line to finish):");
+        System.out.println("Enter a poem (Type '0' on a new line to terminate the program):");
         while (true) {
             String line = scanner.nextLine();
             if (line.equals("0")) {
@@ -20,11 +19,9 @@ public class SortPoem {
             lines.add(line);
         }
 
-        // Sort the lines by length
         lines.sort(Comparator.comparing(String::length));
 
-        // Print out the sorted lines
-        System.out.println("Sorted poem:");
+        System.out.println("Sorted poem(by its length) is as follows:");
         for (String line : lines) {
             System.out.println(line);
         }
