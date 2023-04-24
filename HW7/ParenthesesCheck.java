@@ -1,8 +1,8 @@
+//TASK 6
 package HW7;
 
 import java.util.*;
 
-//TASK 6
 public class ParenthesesCheck {
 
     public static void main(String[] args) {

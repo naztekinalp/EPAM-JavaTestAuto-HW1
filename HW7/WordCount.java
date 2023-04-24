@@ -1,9 +1,9 @@
+//TASK 5
 package HW7;
 
 import java.io.*;
 import java.util.*;
 
-//TASK 5
 public class WordCount {
 
     public static void main(String[] args) {

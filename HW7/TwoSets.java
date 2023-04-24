@@ -1,8 +1,8 @@
+//TASK 3
 package HW7;
 
 import java.util.*;
 
-//TASK 3
 public class TwoSets {
 
     public static void main(String[] args) {

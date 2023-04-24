@@ -1,9 +1,9 @@
+//TASK1
 package HW7;
 
 import java.io.*;
 import java.util.*;
 
-//TASK1
 public class ReverseStrings {
 
     public static void main(String[] args) {

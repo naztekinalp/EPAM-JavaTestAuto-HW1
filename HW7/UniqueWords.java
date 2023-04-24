@@ -1,9 +1,9 @@
+//TASK 4
 package HW7;
 
 import java.io.*;
 import java.util.*;
 
-//TASK 4
 public class UniqueWords {
     public static void main(String[] args) {
 
