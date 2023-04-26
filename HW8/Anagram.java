@@ -19,9 +19,17 @@ public class Anagram {
             Arrays.sort(word2Chars);
             return Arrays.equals(word1Chars, word2Chars);
         };
-        boolean result = anagramFunction.areAnagrams("listen", "silent"); // result will be true
-        System.out.println(result);
+
+        boolean result1 = anagramFunction.areAnagrams("shore", "horse");
+        boolean result2 = anagramFunction.areAnagrams("sleep", "night");
+        boolean result3 = anagramFunction.areAnagrams("cat", "dog");
+        boolean result4 = anagramFunction.areAnagrams("sneak", "snake");
+        boolean result5 = anagramFunction.areAnagrams("balm", "lamb");
+
+        System.out.println(result1);
+        System.out.println(result2);
+        System.out.println(result3);
+        System.out.println(result4);
+        System.out.println(result5);
     }
-
-
 }
