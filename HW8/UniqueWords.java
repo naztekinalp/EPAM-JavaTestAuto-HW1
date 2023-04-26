@@ -12,7 +12,7 @@ import java.util.stream.Collectors;
 public class UniqueWords {
     public static void main(String[] args) {
 
-        File file = new File("./HW7/input_task4.txt");
+        File file = new File("./HW8/input_task4.txt");
 
         Set<String> uniqueWords = new HashSet<>();
 
