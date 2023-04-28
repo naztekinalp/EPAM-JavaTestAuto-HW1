@@ -1,3 +1,3 @@
 UPDATE plants
-SET description = 'A juicy, yellow fruit'
+SET description = 'A red flower'
 WHERE plant_id = 1;

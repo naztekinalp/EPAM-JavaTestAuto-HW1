@@ -1,2 +1,2 @@
 DELETE FROM plants
-WHERE name = 'Tomato';
+WHERE name = 'Rose';
